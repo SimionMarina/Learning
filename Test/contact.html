@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/74796a686f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    
     <div class="header">
         <div class="navbar">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="cv.html">CV</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
             <div class="search-container">
                 <form action="/action_page.php">
@@ -25,16 +24,22 @@
             </div>
         </div>
     </div>
-    
-    <div class="container">
-        <div class="col-left">
-            <fieldset><legend><i>Simion Marina Mihaela</i></legend></fieldset>
-        </div>
-        <div class="col-right">
-            <h1>Hello, I'm Marina.</h1>
-            <p class="text">I am a hardworking and ambitious individual with a passion for sci-fi, gaming, and traveling. Follow my journey as I strive to become a web developer and navigate the world of technology.</p><br>
-            <p class="text text-background"> Join me on my quest to turn my dreams into reality!</p>
-        </div>
+    <div class="main-block">
+        <form action="/">
+            <div class="info">
+            <p>Full name</p>
+            <input class="fname" type="text" name="name" placeholder="Full name">
+            <p>Email</p>
+            <input type="text" name="name" placeholder="Email">
+            <p>Website</p>
+            <input type="text" name="name" placeholder="Website">
+            </div>
+            <p>Message</p>
+            <div>
+              <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" href="/">Submit</button>
+          </form>
     </div>
 </body>
 </html>
